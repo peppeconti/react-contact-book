@@ -1,0 +1,44 @@
+@import '../../import-styles/mixin';
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    @include centered_absolute;
+    height: 25rem;
+    width: 25rem;
+    background-color: white;
+    z-index: 30;
+    animation: slide-down 300ms ease-out forwards;
+
+    .content {
+        @include centered_absolute;
+        width: 100%;
+        text-align: center;
+        font-size: 2rem;
+        padding: 10px;
+    }
+}
+
+
+@keyframes slide-down {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -60%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}

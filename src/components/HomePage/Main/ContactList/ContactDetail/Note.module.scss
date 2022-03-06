@@ -1,0 +1,27 @@
+.draggable-note {
+    list-style: none;
+    cursor: move;
+    width: auto;
+    height: auto;
+    background-color: rgb(255, 245, 107);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: .1rem;
+    box-shadow: 1px 1px 5px rgb(216, 216, 216);
+    user-select: none;
+    touch-action: none;
+
+    p {
+        margin: 0;
+        text-align: center;
+        font-size: .8rem;
+        padding: .3rem;
+        word-wrap: break-word;
+        overflow: hidden;
+    }
+}
+
+.drop {
+    opacity: .8;
+}

@@ -1,0 +1,12 @@
+ul.contactList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 2vh;
+    padding: 0;
+}
+
+@media screen and (max-width: 662px) {
+    ul.contactList {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+}

@@ -1,0 +1,22 @@
+.overflow-visible {
+    overflow: visible;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+
+    .form-container {
+        height: auto;
+        animation: fadeIn .8s forwards ease-in-out;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1
+    }
+}

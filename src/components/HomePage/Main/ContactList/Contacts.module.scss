@@ -1,0 +1,20 @@
+.contactsContainer {
+
+    flex: 1;
+
+    .contactNumber {
+        color: #fff;
+        border-bottom: 2px solid #fff;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+    }
+    .centerContent {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 65vh;
+        flex: 1;
+    }
+
+}
+

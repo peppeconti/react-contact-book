@@ -1,0 +1,36 @@
+.sub-container {
+    display: flex;
+    align-items: center;
+    height: 34vh;
+    padding: 24px;
+
+    .form {
+        width: 65%;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+
+        .note-input {
+            resize: none;
+            outline: none;
+            padding: 1vh;
+            border: none;
+            flex: 1;
+        }
+    }
+
+    .bin {
+        height: 100px;
+        width: 35%;
+        border: 2px solid white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .active {
+        background-color: red;
+    }
+
+}

@@ -1,0 +1,17 @@
+.form {
+    height: 100%;
+    width: 100%;
+    color: #2d2d2d;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding: 0px 30px;
+    grid-gap: 5vh;
+    .buttonContainer {
+        height: 80%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        padding: 0;
+    }
+}

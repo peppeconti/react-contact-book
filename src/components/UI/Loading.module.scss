@@ -1,0 +1,82 @@
+$color: #fff;
+$animation-time: 2.5s;
+
+.loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    transform: translate(-50%, -50%);
+
+    .dot1 {
+        position: absolute;
+        border-radius: 50%;
+        left: 1px;
+        top: 1px;
+        width: 18px;
+        height: 18px;
+        background: $color;
+        animation: spin $animation-time 0s infinite both;
+        filter: blur(2px);
+
+    }
+
+    .dot2 {
+        position: absolute;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        background: $color;
+        animation: spin2 $animation-time 0s infinite both;
+        filter: blur(2px);
+
+    }
+}
+
+
+@keyframes spin {
+
+    0%,
+    100% {
+        box-shadow: 0 0 0 $color, 0 0 0 $color, 0 0 0 $color, 0 0 0 $color, 0 0 0 $color, 0 0 0 $color, 0 0 0 $color, 0 0 0 $color;
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    25%,
+    75% {
+        box-shadow: 28px 0 0 $color, -28px 0 0 $color, 0 28px 0 $color, 0 -28px 0 $color, 20px -20px 0 $color, 20px 20px 0 $color, -20px -20px 0 $color, -20px 20px 0 $color;
+
+    }
+
+    100% {
+        transform: rotate(360deg);
+        box-shadow: 0 0 0 $color, 0 0 0 $color, 0 0 0 $color, 0 0 0 $color, 0 0 0 $color, 0 0 0 $color, 0 0 0 $color, 0 0 0 $color;
+    }
+}
+
+@keyframes spin2 {
+
+    0%,
+    100% {
+        box-shadow: 0 0 0 $color, 0 0 0 $color, 0 0 0 $color, 0 0 0 $color, 0 0 0 $color, 0 0 0 $color, 0 0 0 $color, 0 0 0 $color;
+    }
+
+    50% {
+        transform: rotate(-180deg);
+    }
+
+    25%,
+    75% {
+        box-shadow: 52px 0 0 $color, -52px 0 0 $color, 0 52px 0 $color, 0 -52px 0 $color, 38px -38px 0 $color, 38px 38px 0 $color, -38px -38px 0 $color, -38px 38px 0 $color;
+        background: transparent;
+    }
+
+    100% {
+        transform: rotate(-360deg);
+        box-shadow: 0 0 0 $color, 0 0 0 $color, 0 0 0 $color, 0 0 0 $color, 0 0 0 $color, 0 0 0 $color, 0 0 0 $color, 0 0 0 $color;
+    }
+}

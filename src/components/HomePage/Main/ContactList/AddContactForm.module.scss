@@ -1,0 +1,62 @@
+.form {
+    height: 100%;
+    width: 100%;
+    color: hsl(0, 0%, 18%);
+    padding: 5px;
+
+    .preview {
+        width: 100%;
+        height: calc(23vh + 16px);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .selectedInfo {
+            .selected {
+                font-size: 3.5vh;
+                margin: 0;
+            }
+        }
+
+        .previewContainer {
+            position: relative;
+
+            .previewImg {
+                width: 15vh;
+                height: 15vh;
+                border-radius: 50%;
+            }
+
+            .removePreview {
+                top: 0;
+                left: 0;
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                border-radius: 50%;
+                background-color: transparent;
+                opacity: .5;
+                border: none;
+                color: transparent;
+
+                &:hover {
+                    background-color: rgb(224, 224, 224);
+                    color: rgb(97, 97, 97);
+                }
+
+                .circle-xmark {
+                    font-size: 200%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .form {
+        .main_row {
+            padding-right: 0 !important;
+            padding-left: 0 !important;
+        }
+    }
+}

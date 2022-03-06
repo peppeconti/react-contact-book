@@ -1,0 +1,55 @@
+@mixin centered_absolute {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin warning {
+  font-size: 2vh;
+  padding: .5vh 1vh;
+  color: rgb(255, 104, 104);
+}
+
+@mixin icon_warning {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 3vh;
+  border: 1.5vh solid white;
+  border-radius: 50%;
+  box-sizing: content-box;
+}
+
+/*@mixin warning {
+  position: absolute;
+  top: 130%;
+  left: 0px;
+  //transform: translate(-50%, -50%);
+  color: white;
+  padding: 5px;
+  margin: 0;
+  font-size: 2vh;
+  width: 100%;
+  min-height: 90%;
+  background-color: #4b4b4b;
+  //border: 2px solid grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 3px 3px 3px #4b4b4b;
+  animation: fadeIn .8s forwards ease-in-out;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: -1vh;
+    left: .5vh;
+    width: 2vh;
+    height: 2vh;
+    background-color: #4b4b4b;
+    transform: rotate(45deg);
+    transform-origin: center;
+    z-index: -1;
+  }
+}*/

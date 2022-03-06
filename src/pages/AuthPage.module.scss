@@ -1,0 +1,68 @@
+.overflow-hidden {
+    overflow: hidden;
+    width: 100%;
+
+    .form-container {
+        height: 75vh;
+        animation: fadeIn .8s forwards ease-in-out;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+
+/*@media (min-aspect-ratio: 16/9) AND (orientation: landscape) {
+    .overflow-hidden {
+        .form-container {
+            width: 31%;
+        }
+    }
+}*/
+
+@media (min-aspect-ratio: 1/1) {
+    .overflow-hidden {
+        .form-container {
+            width: 60%;
+        }
+    }
+}
+
+@media (min-aspect-ratio: 3/2) {
+    .overflow-hidden {
+        .form-container {
+            width: 40%;
+        }
+    }
+}
+
+@media (min-aspect-ratio: 2/1) {
+    .overflow-hidden {
+        .form-container {
+            width: 30%;
+        }
+    }
+}
+
+@media (min-aspect-ratio: 3/1) {
+    .overflow-hidden {
+        .form-container {
+            width: 20%;
+        }
+    }
+}
+
+/*@media screen and (min-height: 1300px) {
+    .overflow-hidden {
+        .form-container {
+            width: 80vw;
+        }
+    }
+}*/
