@@ -23,6 +23,7 @@ const ContactDetail = ({ enteredNoteText, setEnteredNoteText, resetNoteText, not
     const AppCtxRef = useRef(useContext(AppContext));
     const location = useLocation();
     const bin = useRef(null);
+    const boundaries = useRef(null);
 
     const [contact, setContact] = useState({});
     const [binActive, setBinActive] = useState(false);
@@ -65,14 +66,14 @@ const ContactDetail = ({ enteredNoteText, setEnteredNoteText, resetNoteText, not
             <Container className='h-100 d-flex justify-content-center align-items-center' fluid='md'>
                 <Col className={styles['contact-container']} lg={12} md={10} sm={10} xs={12}>
                     <Card dark={location.state} light={location.state} vertical edges>
-                        <Row className={`${styles.main_row} px-4 py-4 m-0 w-100 d-flex justify-content-center align-items-center`}>
+                        <Row ref={boundaries} className={`${styles.main_row} px-4 py-4 m-0 w-100 d-flex justify-content-center align-items-center`}>
                             <Col className='p-0 m-0' lg={6} md={12} sm={12} xs={12}>
                                 <ContactImg contact={contact} />
                                 <ContactInfo contact={contact} />
                             </Col>
                             <Col className='p-0 m-0' lg={6} md={12} sm={12} xs={12}>
                                 <AddNote submitHandler={submitHandler} setEnteredNoteText={setEnteredNoteText} enteredNoteText={enteredNoteText} binActive={binActive} bin={bin} />
-                                <NoteContainer notes={appCtx.notes} bin={bin} setBinActive={setBinActive} removeNote={removeNote} />
+                                <NoteContainer boundaries={boundaries} notes={appCtx.notes} bin={bin} setBinActive={setBinActive} removeNote={removeNote} />
                             </Col>
                         </Row>
                     </Card>

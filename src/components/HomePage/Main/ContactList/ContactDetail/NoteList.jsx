@@ -4,7 +4,7 @@ import styles from './NoteList.module.scss';
 import Note from './Note';
 
 
-const NoteList = ({ notes, bin, removeNote, setBinActive }) => {
+const NoteList = ({ boundaries, notes, bin, removeNote, setBinActive }) => {
 
     return (
         <ul className={styles['note-list']}>
@@ -16,6 +16,7 @@ const NoteList = ({ notes, bin, removeNote, setBinActive }) => {
                     bin={bin}
                     removeNote={removeNote}
                     setBinActive={setBinActive}
+                    boundaries={boundaries}
                 />
             ))}
         </ul>
