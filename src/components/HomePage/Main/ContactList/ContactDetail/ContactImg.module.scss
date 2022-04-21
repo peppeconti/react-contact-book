@@ -1,6 +1,7 @@
 .sub-container {
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 34vh;
     padding: 24px;
 
@@ -10,9 +11,10 @@
         height: 100%;
         width: auto;
     }
+}
 
-    .name {
-        flex: 1;
-        text-align: center;
+@media screen and (max-width: 991px) {
+    .image {
+        padding: 0;
     }
 }

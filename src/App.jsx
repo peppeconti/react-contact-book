@@ -3,7 +3,7 @@ import { Route, Switch, Redirect, useHistory } from 'react-router-dom';
 import './App.scss';
 // FONTAWESOME
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faPhoneAlt, faCog, faCircleExclamation, faCircleXmark, faCircleCheck, faNoteSticky, faEnvelope, faTrash } from '@fortawesome/free-solid-svg-icons';
+import { faPhoneAlt, faCog, faCircleExclamation, faCircleXmark, faCircleCheck, faNoteSticky, faEnvelope, faTrash, faAt, faHouse, faAddressBook } from '@fortawesome/free-solid-svg-icons';
 // HOOKS
 import useInput from './hooks/use-input';
 import useAuth from './hooks/use-auth';
@@ -25,7 +25,7 @@ import Preloader from './components/UI/Preloader';
 // CONTEXT
 import AppContext from './store/app-context';
 
-library.add(faPhoneAlt, faCog, faCircleExclamation, faCircleXmark, faCircleCheck, faNoteSticky, faEnvelope, faTrash);
+library.add(faPhoneAlt, faCog, faCircleExclamation, faCircleXmark, faCircleCheck, faNoteSticky, faEnvelope, faTrash, faAt, faHouse, faAddressBook);
 
 function App() {
 

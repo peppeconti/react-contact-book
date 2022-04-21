@@ -1,6 +1,28 @@
 .sub-container {
     display: flex;
+    justify-content: start;
     align-items: center;
     height: 34vh;
     padding: 24px;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+    color: white;
+}
+.contact-info p {
+    padding-left: 24px;
+    font-size: 18px;
+    margin: 0;
+}
+
+@media screen and (max-width: 991px) {
+    .sub-container {
+        justify-content: center;
+    }
+    .contact-info p, .contact-info {
+        font-size: 32px;
+    }
 }

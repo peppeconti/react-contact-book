@@ -63,8 +63,8 @@ const ContactDetail = ({ enteredNoteText, setEnteredNoteText, resetNoteText, not
 
     return (
         <section className={styles['overflow-visible']}>
-            <Container className='h-100 d-flex justify-content-center align-items-center' fluid='md'>
-                <Col className={styles['contact-container']} lg={12} md={10} sm={10} xs={12}>
+            <Container className='h-100 d-flex justify-content-center align-items-center' fluid='xl'>
+                <Col className={styles['contact-container']} lg={12} md={10} sm={12} xs={12}>
                     <Card dark={location.state} light={location.state} vertical edges>
                         <Row ref={boundaries} className={`${styles.main_row} px-4 py-4 m-0 w-100 d-flex justify-content-center align-items-center`}>
                             <Col className='p-0 m-0' lg={6} md={12} sm={12} xs={12}>
