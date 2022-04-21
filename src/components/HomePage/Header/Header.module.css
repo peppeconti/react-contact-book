@@ -1,0 +1,18 @@
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #333;
+  width: 100%;
+  height: 12vh;
+  padding: 16px 24px;
+  -webkit-box-shadow: 0px 0px 20px white;
+          box-shadow: 0px 0px 20px white;
+}
+/*# sourceMappingURL=Header.module.css.map */

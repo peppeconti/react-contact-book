@@ -1,0 +1,103 @@
+/*@mixin warning {
+  position: absolute;
+  top: 130%;
+  left: 0px;
+  //transform: translate(-50%, -50%);
+  color: white;
+  padding: 5px;
+  margin: 0;
+  font-size: 2vh;
+  width: 100%;
+  min-height: 90%;
+  background-color: #4b4b4b;
+  //border: 2px solid grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 3px 3px 3px #4b4b4b;
+  animation: fadeIn .8s forwards ease-in-out;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: -1vh;
+    left: .5vh;
+    width: 2vh;
+    height: 2vh;
+    background-color: #4b4b4b;
+    transform: rotate(45deg);
+    transform-origin: center;
+    z-index: -1;
+  }
+}*/
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 25rem;
+  width: 25rem;
+  background-color: white;
+  z-index: 30;
+  -webkit-animation: slide-down 300ms ease-out forwards;
+          animation: slide-down 300ms ease-out forwards;
+}
+
+.modal .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  padding: 10px;
+}
+
+@-webkit-keyframes slide-down {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -60%);
+            transform: translate(-50%, -60%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes slide-down {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -60%);
+            transform: translate(-50%, -60%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
+/*# sourceMappingURL=Modal.module.css.map */

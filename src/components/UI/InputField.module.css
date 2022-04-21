@@ -1,0 +1,150 @@
+/*@mixin warning {
+  position: absolute;
+  top: 130%;
+  left: 0px;
+  //transform: translate(-50%, -50%);
+  color: white;
+  padding: 5px;
+  margin: 0;
+  font-size: 2vh;
+  width: 100%;
+  min-height: 90%;
+  background-color: #4b4b4b;
+  //border: 2px solid grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 3px 3px 3px #4b4b4b;
+  animation: fadeIn .8s forwards ease-in-out;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: -1vh;
+    left: .5vh;
+    width: 2vh;
+    height: 2vh;
+    background-color: #4b4b4b;
+    transform: rotate(45deg);
+    transform-origin: center;
+    z-index: -1;
+  }
+}*/
+.inputContainer {
+  position: relative;
+  width: 100%;
+  height: 6vh;
+  padding: 0;
+}
+
+.inputContainer .input {
+  width: inherit;
+  height: inherit;
+  font-family: inherit;
+  border-radius: 4vh;
+  padding: 0 1vh;
+  font-size: 3vh;
+  border: none;
+  display: block;
+}
+
+.inputContainer .input:focus {
+  outline: none;
+  -webkit-box-shadow: 3px 3px 5px #2d2d2d;
+          box-shadow: 3px 3px 5px #2d2d2d;
+}
+
+.inputContainer .warning {
+  font-size: 2vh;
+  padding: .5vh 1vh;
+  color: #ff6868;
+}
+
+.inputContainer .circle-warning {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 3vh;
+  border: 1.5vh solid white;
+  border-radius: 50%;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.inputError .input,
+.inputError .input:focus {
+  outline: 2px solid #ff6868;
+}
+
+.label {
+  padding: 0 1vh;
+  display: inline-block;
+  text-align: left;
+  font-size: 3.5vh;
+  height: 5.5vh;
+}
+
+.label span.required {
+  color: #ff6868;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*@media (min-aspect-ratio: 1/1) {
+    .inputContainer {
+        .warning {
+            @include warning_inside
+        }
+    }
+}
+
+@media (min-aspect-ratio: 3/2) {
+    .inputContainer {
+        .warning {
+            @include warning_outside
+        }
+    }
+}*/
+/*@media screen and (max-width: 1145px) {
+    .inputContainer {
+        .warning {
+            color: rgb(255, 104, 104);
+            top: 5vh;
+            left: 0vh;
+            padding: 0 1vh;
+            width: 100%;
+            background-color: transparent;
+            justify-content: flex-start;
+            border: none;
+            transform: none;
+
+            &:after {
+                display: none;
+            }
+        }
+    }
+}*/
+/*@media screen and (min-aspect-ratio: 8/5) {
+    .overflow-hidden {
+        .form-container {
+            width: 80vw;
+        }
+    }
+}*/
+/*# sourceMappingURL=InputField.module.css.map */

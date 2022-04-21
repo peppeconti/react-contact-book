@@ -1,0 +1,64 @@
+.form {
+  height: 100%;
+  width: 100%;
+  color: #2e2e2e;
+  padding: 5px;
+}
+
+.form .preview {
+  width: 100%;
+  height: calc(23vh + 16px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form .preview .selectedInfo .selected {
+  font-size: 3.5vh;
+  margin: 0;
+}
+
+.form .preview .previewContainer {
+  position: relative;
+}
+
+.form .preview .previewContainer .previewImg {
+  width: 15vh;
+  height: 15vh;
+  border-radius: 50%;
+}
+
+.form .preview .previewContainer .removePreview {
+  top: 0;
+  left: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  background-color: transparent;
+  opacity: .5;
+  border: none;
+  color: transparent;
+}
+
+.form .preview .previewContainer .removePreview:hover {
+  background-color: #e0e0e0;
+  color: #616161;
+}
+
+.form .preview .previewContainer .removePreview .circle-xmark {
+  font-size: 200%;
+}
+
+@media screen and (max-width: 767px) {
+  .form .main_row {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+}
+/*# sourceMappingURL=AddContactForm.module.css.map */

@@ -1,0 +1,13 @@
+.note-list {
+  display: -ms-grid;
+  display: grid;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  -ms-grid-columns: (minmax(25%, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+  -ms-grid-rows: (minmax(50%, 1fr))[auto-fill];
+      grid-template-rows: repeat(auto-fill, minmax(50%, 1fr));
+  padding: 0;
+}
+/*# sourceMappingURL=NoteList.module.css.map */

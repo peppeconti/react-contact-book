@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,YAAY,CAAC;EACT,UAAU,EAAE,MAAM;EAClB,SAAS,EAAE,KAAK;EAChB,eAAe,EAAE,SAAS;EAC1B,MAAM,EAAE,CAAC;EACT,MAAM,EAAE,OAAO;CAClB",
+    "sources": [
+        "SwitchLogin.module.scss"
+    ],
+    "names": [],
+    "file": "SwitchLogin.module.css"
+}

@@ -1,14 +1,8 @@
-.overflow-visible {
-    overflow: visible;
-    width: 100%;
-    height: auto;
+.contact {
+    animation: fadeIn .8s forwards ease-in-out;
+    border: 1px solid white;
     display: flex;
-    align-items: center;
-
-    .contact-container {
-        height: auto;
-        animation: fadeIn .8s forwards ease-in-out;
-    }
+    justify-content: center;
 }
 
 @keyframes fadeIn {
@@ -18,12 +12,5 @@
 
     to {
         opacity: 1
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .main_row {
-        padding-right: 10px !important;
-        padding-left: 10px !important;
     }
 }

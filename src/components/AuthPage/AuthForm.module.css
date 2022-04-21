@@ -1,0 +1,29 @@
+.form {
+  height: 100%;
+  width: 100%;
+  color: #2d2d2d;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  padding: 0px 30px;
+  grid-gap: 5vh;
+}
+
+.form .buttonContainer {
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0;
+}
+/*# sourceMappingURL=AuthForm.module.css.map */

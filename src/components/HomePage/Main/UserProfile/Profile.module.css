@@ -1,0 +1,36 @@
+.overflow-visible {
+  overflow: visible;
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.overflow-visible .form-container {
+  height: auto;
+  -webkit-animation: fadeIn .8s forwards ease-in-out;
+          animation: fadeIn .8s forwards ease-in-out;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=Profile.module.css.map */

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,cAAc,CAAC;EACX,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;EACnB,MAAM,EAAE,IAAI;EACZ,gBAAgB,EAAE,OAAO;EACzB,OAAO,EAAE,GAAG;EACZ,MAAM,EAAE,MAAM;CACjB",
+    "sources": [
+        "NoteContainer.module.scss"
+    ],
+    "names": [],
+    "file": "NoteContainer.module.css"
+}

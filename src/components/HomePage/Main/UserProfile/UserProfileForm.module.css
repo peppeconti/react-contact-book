@@ -1,0 +1,158 @@
+.form {
+  height: 100%;
+  width: 100%;
+  min-height: 80vh;
+  color: #2e2e2e;
+  padding: 5px;
+}
+
+.form .preview {
+  width: 100%;
+  height: calc(23vh + 16px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form .preview .selectedInfo .selected {
+  font-size: 3.5vh;
+  margin: 0;
+}
+
+.form .preview .selectedInfo .imageIsSet {
+  color: #00c900;
+  margin: 0;
+}
+
+.form .preview .selectedInfo .imageIsNotSet {
+  font-size: 2.7vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ff6868;
+  margin: 0;
+}
+
+.form .preview .selectedInfo .imageIsNotSet .circle {
+  display: inherit;
+  font-size: 2.7vh;
+}
+
+.form .preview .previewContainer {
+  position: relative;
+}
+
+.form .preview .previewContainer .previewImg {
+  width: 15vh;
+  height: 15vh;
+  border-radius: 50%;
+}
+
+.form .preview .previewContainer .removePreview {
+  top: 0;
+  left: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  background-color: transparent;
+  opacity: .5;
+  border: none;
+  color: transparent;
+}
+
+.form .preview .previewContainer .removePreview:hover {
+  background-color: #e0e0e0;
+  color: #616161;
+}
+
+.form .preview .previewContainer .removePreview .circle-xmark {
+  font-size: 200%;
+}
+
+.form .creationTime {
+  margin: 0;
+  font-size: 3.5vh;
+}
+
+.form .profileComplete {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  font-size: 3.5vh;
+  color: #00c900;
+}
+
+.form .profileComplete .circle {
+  display: inherit;
+  font-size: 4vh;
+  padding-left: 2vh;
+}
+
+.form .profileIncomplete {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  font-size: 3.5vh;
+  color: #ff6868;
+}
+
+.form .profileIncomplete .circle {
+  display: inherit;
+  font-size: 4vh;
+  padding-left: 2vh;
+}
+
+@media screen and (max-width: 767px) {
+  .form .main_row {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .form .main_row .column {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .form .main_row .column .creationTime,
+  .form .main_row .column .profileComplete,
+  .form .main_row .column .profileIncomplete {
+    font-size: 2.5vh;
+    margin-top: 2vh;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .form .main_row .column .creationTime .circle,
+  .form .main_row .column .profileComplete .circle,
+  .form .main_row .column .profileIncomplete .circle {
+    font-size: 2.5vh;
+  }
+}
+/*# sourceMappingURL=UserProfileForm.module.css.map */

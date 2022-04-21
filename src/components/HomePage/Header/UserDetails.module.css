@@ -1,0 +1,219 @@
+/*@mixin warning {
+  position: absolute;
+  top: 130%;
+  left: 0px;
+  //transform: translate(-50%, -50%);
+  color: white;
+  padding: 5px;
+  margin: 0;
+  font-size: 2vh;
+  width: 100%;
+  min-height: 90%;
+  background-color: #4b4b4b;
+  //border: 2px solid grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 3px 3px 3px #4b4b4b;
+  animation: fadeIn .8s forwards ease-in-out;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: -1vh;
+    left: .5vh;
+    width: 2vh;
+    height: 2vh;
+    background-color: #4b4b4b;
+    transform: rotate(45deg);
+    transform-origin: center;
+    z-index: -1;
+  }
+}*/
+.profileData {
+  position: absolute;
+  top: 8vh;
+  right: 0;
+  width: 40vh;
+  height: 80vh;
+  font-size: 10px;
+  z-index: 20;
+  -webkit-box-shadow: 3px 3px 5px #2d2d2d;
+          box-shadow: 3px 3px 5px #2d2d2d;
+  border: 5px solid white;
+  -webkit-animation: fadeIn .3s forwards ease-in-out;
+          animation: fadeIn .3s forwards ease-in-out;
+}
+
+.profileData:after {
+  content: '';
+  position: absolute;
+  background-color: white;
+  height: 2vh;
+  width: 2vh;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: -1.5vh;
+  right: 1.5vh;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+.profileData .detailsList {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 95%;
+  width: 80%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+  padding: 0;
+}
+
+.profileData .detailsList .item {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.profileData .detailsList .userImageContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: inherit;
+}
+
+.profileData .detailsList .userImageContainer .userDetailsImage {
+  height: 85%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.profileData .detailsList .userNameContainer {
+  padding: 2vh 0;
+  border-bottom: 2px solid white;
+  border-top: 2px solid white;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.profileData .detailsList .userNameContainer .displayName,
+.profileData .detailsList .userNameContainer .userFullName {
+  font-size: 3.8vh;
+  text-align: center;
+  margin: 0;
+}
+
+.profileData .detailsList .userNameContainer .userFullName {
+  font-size: 3vh;
+}
+
+.profileData .detailsList .settings {
+  padding: 0;
+  height: inherit;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profileData .detailsList .settings .settings-icon {
+  font-size: 6vh;
+  color: white;
+  cursor: pointer;
+}
+
+.profileData .detailsList .settings .settings-icon:hover {
+  color: #e6e6e6;
+}
+
+.profileData .detailsList .buttonContainer {
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.profileData .detailsList .buttonContainer .logout {
+  width: 100%;
+  height: 6vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  border: none;
+  border-radius: 4vh;
+  background-color: #f35252;
+  -webkit-box-shadow: 3px 3px 5px #2d2d2d;
+          box-shadow: 3px 3px 5px #2d2d2d;
+  cursor: pointer;
+  font-size: 4vh;
+  margin: 0;
+}
+
+.profileData .detailsList .buttonContainer .logout:hover {
+  opacity: .8;
+  -webkit-box-shadow: 5px 5px 5px #2d2d2d;
+          box-shadow: 5px 5px 5px #2d2d2d;
+}
+
+.backdrop {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+  opacity: .5;
+  top: 0;
+  left: 0;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=UserDetails.module.css.map */

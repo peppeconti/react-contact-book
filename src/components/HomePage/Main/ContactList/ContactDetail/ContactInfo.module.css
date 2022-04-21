@@ -1,0 +1,39 @@
+.sub-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 34vh;
+}
+
+.sub-container .contact-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 12px 0;
+  color: white;
+}
+
+.sub-container .contact-info p {
+  padding-left: 24px;
+  font-size: 18px;
+  margin: 0;
+}
+
+@media screen and (max-width: 991px) {
+  .sub-container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 24px;
+  }
+}
+/*# sourceMappingURL=ContactInfo.module.css.map */

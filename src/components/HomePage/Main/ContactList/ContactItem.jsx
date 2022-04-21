@@ -11,10 +11,7 @@ const OpenDetailsButton = ({ color, id }) => {
 
     return (
         <div className={styles.buttonContainer}>
-            <Link to={{
-                pathname: `contact/${id}`,
-                state: `${color}`
-            }} >
+            <Link to={`contact/${id}`}>
                 <button className={styles.details} type="button" style={background_color}>Details</button>
             </Link>
         </div>
