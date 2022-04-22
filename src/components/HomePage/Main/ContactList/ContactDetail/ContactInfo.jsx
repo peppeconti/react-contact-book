@@ -6,21 +6,24 @@ const ContactInfo = ({ contact }) => {
     return (
         <div className={styles['sub-container']}>
             <div>
-                <div className={styles['contact-info']}>
-                    <FontAwesomeIcon icon='fa-address-book' />
-                    <p className={styles.fullName}>{contact.firstName} {contact.lastName ? contact.lastName : ''}</p>
+                <div className={styles.wrapper}>
+                    <FontAwesomeIcon className={styles.icon} icon="fa-address-book" />
+                    <p className={styles['contact-info']}>{contact.firstName} {contact.lastName ? contact.lastName : ''}</p>
                 </div>
-                <div className={styles['contact-info']}>
-                    <FontAwesomeIcon icon='phone-alt' />
-                    <p className={styles.fullName}>{contact.phoneNumber}</p>
+                <hr />
+                <div className={styles.wrapper}>
+                    <FontAwesomeIcon className={styles.icon} icon="fa-phone-alt" />
+                    <p className={styles['contact-info']}>{contact.phoneNumber}</p>
                 </div>
-                <div className={styles['contact-info']}>
-                    <FontAwesomeIcon icon='fa-at' />
-                    <p className={styles.fullName}>{contact.email}</p>
+                <hr />
+                <div className={styles.wrapper}>
+                    <FontAwesomeIcon className={styles.icon} icon="fa-phone-alt" />
+                    <p className={styles['contact-info']}>{contact.email}</p>
                 </div>
-                <div className={styles['contact-info']}>
-                    <FontAwesomeIcon icon='fa-house' />
-                    <p className={styles.fullName}>{contact.address}</p>
+                <hr />
+                <div className={styles.wrapper}>
+                    <FontAwesomeIcon className={styles.icon} icon="fa-house" />
+                    <p className={styles['contact-info']}>{contact.address}</p>
                 </div>
             </div>
         </div>

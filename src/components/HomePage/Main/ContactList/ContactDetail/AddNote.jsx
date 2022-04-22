@@ -7,9 +7,9 @@ const AddNote = ( { submitHandler, enteredNoteText, setEnteredNoteText, binActiv
     return (
         <div className={styles['sub-container']}>
             <form className={styles.form} onSubmit={submitHandler}>
-                <label className={styles.label} htmlFor='noteText'>Add a note</label>
+                <label className={styles.label} htmlFor='noteText'></label>
                 <textarea className={styles['note-input']} id="noteText" name="noteText" rows="4" cols="50" onChange={setEnteredNoteText} value={enteredNoteText} maxLength='40' />
-                <button type='submit'>Add note</button>
+                <button className='add-note' type='submit'>Add note</button>
             </form>
             <div ref={bin} className={binActive ? `${styles.bin} ${styles.active}` : styles.bin}><FontAwesomeIcon className={styles['bin-icon']} icon='trash' /></div>
         </div>

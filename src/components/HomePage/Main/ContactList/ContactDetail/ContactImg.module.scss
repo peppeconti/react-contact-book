@@ -2,20 +2,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 34vh;
+    padding: 12px;
 
     .image {
         border-radius: 50%;
-        height: 95%;
-    }
-}
-
-@media screen and (max-width: 991px) {
-    .sub-container {
-        margin-bottom: 24px;
-
-        .image {
-            height: 90%;
-        }
+        width: 20rem;
+        height: 20rem;
     }
 }

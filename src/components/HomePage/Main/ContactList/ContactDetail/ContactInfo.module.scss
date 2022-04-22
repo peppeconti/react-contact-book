@@ -2,26 +2,24 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 34vh;
-
-    .contact-info {
-        display: flex;
-        align-items: center;
-        padding: 12px 0;
-        color: white;
-    }
-
-    .contact-info p {
-        padding-left: 24px;
-        font-size: 18px;
-        margin: 0;
-    }
-
+    padding: 12px;
 }
 
-@media screen and (max-width: 991px) {
-    .sub-container {
-        justify-content: center;
-        margin-bottom: 24px;
-    }
+.icon {
+    color: #fff;
+}
+
+.wrapper {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.contact-info {
+    color: #fff;
+    margin: .5rem 0;
+    font-size: 1.2rem;
+}
+
+hr {
+    color: #fff;
 }

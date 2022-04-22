@@ -1,8 +1,6 @@
 import React, { useContext, useEffect, useState, useRef } from 'react';
 import { useParams } from 'react-router-dom';
-// BOOTSTRAP COMPS
-import Col from 'react-bootstrap/Col';
-import Container from 'react-bootstrap/Container';
+import styles from './ContactDetail.module.scss';
 // FIREBASE
 import { auth, db } from '../../../../../firebase/firebase';
 import { ref, remove } from "firebase/database";
@@ -58,31 +56,12 @@ const ContactDetail = ({ enteredNoteText, setEnteredNoteText, resetNoteText, not
     }
 
     return (
-        <Container ref={boundaries} className='contact'>
-            <Col className='p-0 m-0' lg={6} md={12} sm={12} xs={12}>
-                <ContactImg contact={contact} />
-            </Col>
-            <Col className='p-0 m-0' lg={6} md={12} sm={12} xs={12}>
-                <ContactInfo contact={contact} />
-            </Col>
-            <Col className='p-0 m-0' lg={6} md={12} sm={12} xs={12}>
-                <AddNote submitHandler={submitHandler} setEnteredNoteText={setEnteredNoteText} enteredNoteText={enteredNoteText} binActive={binActive} bin={bin} />
-            </Col>
-            <Col className='p-0 m-0' lg={6} md={12} sm={12} xs={12}>
-                <NoteContainer boundaries={boundaries} notes={appCtx.notes} bin={bin} setBinActive={setBinActive} removeNote={removeNote} />
-            </Col>
-        </Container>
+        <section ref={boundaries} className={styles['contact-container']}>
+            <ContactImg contact={contact} />
+            <ContactInfo contact={contact} />
+            <AddNote submitHandler={submitHandler} setEnteredNoteText={setEnteredNoteText} enteredNoteText={enteredNoteText} binActive={binActive} bin={bin} />
+            <NoteContainer boundaries={boundaries} notes={appCtx.notes} bin={bin} setBinActive={setBinActive} removeNote={removeNote} />
+        </section>
     )
 }
 export default ContactDetail;
-
-
-
-/**
- * 
- *  <Col className='p-0 m-0' lg={12} md={12} sm={12} xs={12}>
-                    <AddNote submitHandler={submitHandler} setEnteredNoteText={setEnteredNoteText} enteredNoteText={enteredNoteText} binActive={binActive} bin={bin} />
-                    <NoteContainer boundaries={boundaries} notes={appCtx.notes} bin={bin} setBinActive={setBinActive} removeNote={removeNote} />
-                </Col>
- * 
- */
