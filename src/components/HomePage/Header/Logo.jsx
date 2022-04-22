@@ -1,13 +1,18 @@
 import React from 'react';
+import { Link, useRouteMatch } from 'react-router-dom';
 import styles from './Logo.module.scss';
 // COMPONENTS
-import Card from '../../UI/Styled-Components/Card';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Logo = () => {
 
+    const match = useRouteMatch();
+
     return (
         <h1 className={styles.logo}>
-            <Card vertical/>
+             <Link to={`${match.url}`} >
+                <FontAwesomeIcon className={styles.icon} icon='fa-house'/>
+            </Link>
         </h1>
     )
 }

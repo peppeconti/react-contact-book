@@ -2,4 +2,16 @@
     width: 7vh;
     height: 7vh;
     margin: 0;
+    display: flex;
+    align-items: center;
+
+    a .icon {
+        width: 6vh;
+        height: 6vh;
+        color: white;
+    }
+
+    a .icon:hover {
+        opacity: .8;
+    }
 }

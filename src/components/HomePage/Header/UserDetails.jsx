@@ -5,10 +5,7 @@ import { Link, useRouteMatch } from 'react-router-dom';
 // CONTEXT
 import AppContext from '../../../store/app-context';
 // COMPONENTS
-import Card from '../../UI/Styled-Components/Card';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
-
 
 const ProfileImage = () => {
 
@@ -24,7 +21,7 @@ const ProfileImage = () => {
 const UserName = ({ appCtx }) => {
     return (
         <div className={styles.userNameContainer}>
-            {appCtx.userData.displayName ? <p className={styles.displayName}>{appCtx.userData.displayName}</p> : <p className={styles.displayName}>{appCtx.userData.email}</p>}
+            {appCtx.userData.displayName ? <p className={styles.displayName}>{appCtx.userData.displayName}</p> : <p className={styles.displayName}>{appCtx.userData.email.slice(0, appCtx.userData.email.indexOf('@'))}</p>}
             {(appCtx.userData.firstName && appCtx.userData.lastName) && <p className={styles.userFullName}>({appCtx.userData.firstName + ' ' + appCtx.userData.lastName})</p>}
         </div>
     );
@@ -61,16 +58,14 @@ const UserDetails = ({ setUserDetails, signOutUser }) => {
     return (
         <Fragment>
             <div className={styles.profileData}>
-                <Card vertical>
-                    <ul className={styles.detailsList}>
-                        <li className={styles.item}><ProfileImage /></li>
-                        <li className={styles.item}><UserName appCtx={appCtx} /></li>
-                        <Link to={`${match.url}/profile`} onClick={() => setUserDetails(false)}>
-                            <li className={styles.item}><Settings /></li>
-                        </Link>
-                        <li className={styles.item}><LogoutButton text='Logout' signOutUser={signOutUser} /></li>
-                    </ul>
-                </Card>
+                <ul className={styles.detailsList}>
+                    <li className={styles.item}><ProfileImage /></li>
+                    <li className={styles.item}><UserName appCtx={appCtx} /></li>
+                    <Link to={`${match.url}/profile`} onClick={() => setUserDetails(false)}>
+                        <li className={styles.item}><Settings /></li>
+                    </Link>
+                    <li className={styles.item}><LogoutButton text='Logout' signOutUser={signOutUser} /></li>
+                </ul>
             </div>
             <Backdrop setUserDetails={setUserDetails} />
         </Fragment >

@@ -6,14 +6,18 @@
 
     .navItem {
         list-style: none;
-        padding-left: 20px;
+        padding-left: 2.5rem;
         display: flex;
         align-items: center;
 
-        .addButton {
-            width: 100%;
-            height: 80%;
-            padding: 0px;
+        .icon {
+            width: 6vh;
+            height: 6vh;
+            color: white;
+        }
+
+        .icon:hover {
+            opacity: .8;
         }
 
         .imgContainer {

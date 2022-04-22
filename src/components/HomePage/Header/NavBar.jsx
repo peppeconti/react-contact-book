@@ -6,6 +6,7 @@ import { Link, useRouteMatch } from 'react-router-dom';
 import AppContext from '../../../store/app-context';
 // COMPONENTS
 import UserDetails from './UserDetails';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const NavBar = ({ userDetails, setUserDetails, signOutUser }) => {
 
@@ -16,14 +17,11 @@ const NavBar = ({ userDetails, setUserDetails, signOutUser }) => {
 
     return (
         <ul className={styles.list}>
-            <Link to={`${match.url}`} >
-                <li className={styles.navItem}><button className={styles.addButton}>Homepage</button></li>
-            </Link>
             <Link to={`${match.url}/contacts`} >
-                <li className={styles.navItem}><button className={styles.addButton}>Contacts</button></li>
+                <li className={styles.navItem}><FontAwesomeIcon className={styles.icon} icon='fa-address-book'/></li>
             </Link>
             <Link to={`${match.url}/add-contact`} >
-                <li className={styles.navItem}><button className={styles.addButton}>Add Contact</button></li>
+                <li className={styles.navItem}><FontAwesomeIcon className={styles.icon} icon='fa-circle-plus'/></li>
             </Link>
             <li className={styles.navItem}>
                 <div className={styles.imgContainer}>
